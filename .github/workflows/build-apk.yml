@@ -9,16 +9,27 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      - uses: actions/setup-java@v5
+      - name: Setup Java 21
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: 21
+
+      - name: Show versions
+        run: |
+          node -v
+          npm -v
+          java -version
+          ls -la
+          ls -la android
 
       - name: Install dependencies
         run: npm install
