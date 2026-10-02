@@ -1,0 +1,6 @@
+{
+  "name": "Shree Sahakar - Co-operative Credit Society App",
+  "description": "Comprehensive Co-operative Credit Society application for Member Shares, Multi-Scheme Deposits (Pigmy Daily, Monthly RD, High-Yield FDs), and Multiple Loan Accounts (Surety, Gold, Property Mortgage, Festival Advance) with Passbook Ledger.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
